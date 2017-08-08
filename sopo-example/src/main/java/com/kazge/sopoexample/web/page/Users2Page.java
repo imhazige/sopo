@@ -2,26 +2,24 @@ package com.kazge.sopoexample.web.page;
 
 import java.util.List;
 
+import com.kazge.sopoexample.common.bean.PropertyDescriptor;
+import com.kazge.sopoexample.common.query.Filter;
+import com.kazge.sopoexample.common.query.PagingDataSource;
+import com.kazge.sopoexample.common.query.VirtualQueryResult;
 import com.kazge.sopoexample.component.grid.Column2;
 import com.kazge.sopoexample.component.grid.Grid2;
 import com.kazge.sopoexample.web.AppConfig;
 import com.kazge.sopoexample.web.remote.RemoteMock;
 
-import test.common.bean.PropertyDescriptor;
-import test.common.query.PagingDataSource;
-import test.common.query.Filter;
-import test.common.query.VirtualQueryResult;
-import test.data.User;
-import test.service.Command;
-import web.sopo.Engine;
-import web.sopo.component.Anchor;
-import web.sopo.component.grid.Cell;
-import web.sopo.component.grid.Grid;
-import web.sopo.component.grid.PrepareRowListener;
-import web.sopo.component.grid.Grid.Row;
-import web.sopo.util.DebugUtils;
+import com.kazge.sopo.Engine;
+import com.kazge.sopo.component.Anchor;
+import com.kazge.sopo.component.grid.Cell;
+import com.kazge.sopo.component.grid.Grid;
+import com.kazge.sopo.component.grid.PrepareRowListener;
+import com.kazge.sopo.component.grid.Grid.Row;
+import com.kazge.sopo.util.DebugUtils;
 
-public class Users2 extends AbstractPage
+public class Users2Page extends AbstractPage
 {
 	private Grid2 grid;
 
@@ -64,7 +62,7 @@ public class Users2 extends AbstractPage
 			String text = ((Column2) grid.getColumn(0)).getDescriptor().display(data);
 			anchor.setText(text);
 			anchor.setTarget("_blank");
-			anchor.setHref(String.format("User.aspx?uid=%s", ((User)data).getUid()));
+			anchor.setHref(String.format("User.aspx?uid=%s", ((UserPage)data).getUid()));
 			cell.addComponent(anchor);
 		}
 	}

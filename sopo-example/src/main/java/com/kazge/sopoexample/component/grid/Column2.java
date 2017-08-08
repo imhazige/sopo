@@ -2,14 +2,15 @@ package com.kazge.sopoexample.component.grid;
 
 import java.util.Map;
 
-import test.common.bean.PropertyDescriptor;
-import test.common.query.FilterCondition;
-import web.sopo.Request;
-import web.sopo.component.AnchorButton;
-import web.sopo.component.Font;
-import web.sopo.component.Hidden;
-import web.sopo.component.Updateable;
-import web.sopo.component.grid.Column;
+import com.kazge.sopoexample.common.bean.PropertyDescriptor;
+import com.kazge.sopoexample.common.query.FilterCondition;
+
+import com.kazge.sopo.Request;
+import com.kazge.sopo.component.AnchorButton;
+import com.kazge.sopo.component.Font;
+import com.kazge.sopo.component.Hidden;
+import com.kazge.sopo.component.Updateable;
+import com.kazge.sopo.component.grid.Column;
 
 public class Column2 extends Column implements Updateable
 {

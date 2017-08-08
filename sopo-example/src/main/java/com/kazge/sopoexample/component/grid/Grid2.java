@@ -6,22 +6,23 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import test.common.bean.PropertyDescriptor;
-import test.common.query.Filter;
-import test.common.query.PagingDataSource;
-import test.common.query.VirtualQueryResult;
-import web.sopo.Request;
-import web.sopo.component.Hidden;
-import web.sopo.component.Literal;
-import web.sopo.component.Table;
-import web.sopo.component.Td;
-import web.sopo.component.TemplateComponent;
-import web.sopo.component.Tr;
-import web.sopo.component.Updateable;
-import web.sopo.component.Utils;
-import web.sopo.component.grid.Grid;
-import web.sopo.component.grid.PrepareRowListener;
-import web.sopo.util.FileUtils;
+import com.kazge.sopoexample.common.bean.PropertyDescriptor;
+import com.kazge.sopoexample.common.query.Filter;
+import com.kazge.sopoexample.common.query.PagingDataSource;
+import com.kazge.sopoexample.common.query.VirtualQueryResult;
+
+import com.kazge.sopo.Request;
+import com.kazge.sopo.component.Hidden;
+import com.kazge.sopo.component.Literal;
+import com.kazge.sopo.component.Table;
+import com.kazge.sopo.component.Td;
+import com.kazge.sopo.component.TemplateComponent;
+import com.kazge.sopo.component.Tr;
+import com.kazge.sopo.component.Updateable;
+import com.kazge.sopo.component.Utils;
+import com.kazge.sopo.component.grid.Grid;
+import com.kazge.sopo.component.grid.PrepareRowListener;
+import com.kazge.sopo.util.FileUtils;
 
 public class Grid2 extends TemplateComponent implements Updateable
 {

@@ -1,10 +1,11 @@
 package com.kazge.sopoexample.component.grid;
 
-import test.common.bean.PropertyDescriptor;
-import test.common.query.FilterCondition;
-import web.sopo.MarkupWriter;
-import web.sopo.Request;
-import web.sopo.component.TagComponent;
+import com.kazge.sopoexample.common.bean.PropertyDescriptor;
+import com.kazge.sopoexample.common.query.FilterCondition;
+
+import com.kazge.sopo.MarkupWriter;
+import com.kazge.sopo.Request;
+import com.kazge.sopo.component.TagComponent;
 
 public abstract class QueryCell extends TagComponent
 {	

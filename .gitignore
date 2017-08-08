@@ -2,3 +2,6 @@ sopo/bin
 sopo/.settings
 .classpath
 sopo-example/.settings
+sopo-example/src/WebRoot/derbyDB
+sopo-example/src/WebRoot/WEB-INF/lib
+sopo-example/src/WebRoot/WEB-INF/classes

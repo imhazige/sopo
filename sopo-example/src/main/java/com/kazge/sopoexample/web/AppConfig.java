@@ -8,14 +8,15 @@ import java.util.Map;
 
 import org.xml.sax.Attributes;
 
-import test.common.FileUtils;
-import test.common.xml.IXmlSaxListener;
-import test.common.xml.SAXEventParser;
-import web.sopo.DefaultNavigate;
-import web.sopo.Navigate;
-import web.sopo.Request;
+import com.kazge.sopoexample.common.FileUtils;
+import com.kazge.sopoexample.common.xml.IXmlSaxListener;
+import com.kazge.sopoexample.common.xml.SAXEventParser;
 
-public class AppConfig extends web.sopo.AppConfig
+import com.kazge.sopo.DefaultNavigate;
+import com.kazge.sopo.Navigate;
+import com.kazge.sopo.Request;
+
+public class AppConfig extends com.kazge.sopo.AppConfig
 {
 	private Map<String, List<Map<String,String>>> grid2Config;
 	private String gridId;

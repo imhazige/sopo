@@ -1,9 +1,7 @@
 package com.kazge.sopoexample.web.remote;
 
-import test.service.Command;
-import test.service.OperatorBean;
-import web.sopo.AppConfig;
-import web.sopo.Engine;
+import com.kazge.sopo.AppConfig;
+import com.kazge.sopo.Engine;
 
 public class RemoteMock
 {

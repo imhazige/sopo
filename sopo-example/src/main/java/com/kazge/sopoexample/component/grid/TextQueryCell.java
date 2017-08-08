@@ -1,11 +1,12 @@
 package com.kazge.sopoexample.component.grid;
 
-import test.common.StringUtils;
-import test.common.query.FilterCondition;
-import test.common.query.FilterRelation;
-import test.common.query.FilterType;
-import web.sopo.Request;
-import web.sopo.component.Text;
+import com.kazge.sopoexample.common.StringUtils;
+import com.kazge.sopoexample.common.query.FilterCondition;
+import com.kazge.sopoexample.common.query.FilterRelation;
+import com.kazge.sopoexample.common.query.FilterType;
+
+import com.kazge.sopo.Request;
+import com.kazge.sopo.component.Text;
 
 public class TextQueryCell extends QueryCell
 {

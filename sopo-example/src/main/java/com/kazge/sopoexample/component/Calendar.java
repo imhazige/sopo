@@ -1,8 +1,8 @@
 package com.kazge.sopoexample.component;
 
-import web.sopo.asset.Asset;
-import web.sopo.asset.ContextAsset;
-import web.sopo.component.Text;
+import com.kazge.sopo.asset.Asset;
+import com.kazge.sopo.asset.ContextAsset;
+import com.kazge.sopo.component.Text;
 
 public class Calendar extends Text
 {

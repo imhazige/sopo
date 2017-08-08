@@ -4,22 +4,22 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import test.common.StringUtils;
-import test.common.bean.DateDescriptor;
-import test.common.bean.PropertyDescriptor;
-import web.sopo.Request;
-import web.sopo.asset.Asset;
-import web.sopo.asset.ContextAsset;
-import web.sopo.component.Component;
-import web.sopo.component.Font;
-import web.sopo.component.Label;
-import web.sopo.component.Password;
-import web.sopo.component.Table;
-import web.sopo.component.Td;
-import web.sopo.component.TemplateComponent;
-import web.sopo.component.Text;
-import web.sopo.component.Tr;
-import web.sopo.util.FileUtils;
+import com.kazge.sopo.Request;
+import com.kazge.sopo.asset.Asset;
+import com.kazge.sopo.asset.ContextAsset;
+import com.kazge.sopo.component.Component;
+import com.kazge.sopo.component.Font;
+import com.kazge.sopo.component.Label;
+import com.kazge.sopo.component.Password;
+import com.kazge.sopo.component.Table;
+import com.kazge.sopo.component.Td;
+import com.kazge.sopo.component.TemplateComponent;
+import com.kazge.sopo.component.Text;
+import com.kazge.sopo.component.Tr;
+import com.kazge.sopo.util.FileUtils;
+import com.kazge.sopo.util.StringUtils;
+import com.kazge.sopoexample.common.bean.DateDescriptor;
+import com.kazge.sopoexample.common.bean.PropertyDescriptor;
 
 public class Beanform extends TemplateComponent
 {

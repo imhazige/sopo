@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import javax.servlet.FilterConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -80,10 +79,10 @@ public class Engine
 	}
 
 	@SuppressWarnings("unchecked")
-	private void _init(FilterConfig argConfig)
+	private void _init(ServletContext servletContext)
 	{
-		context = argConfig.getServletContext();
-		String appconfigStr = argConfig.getInitParameter("config");
+		context = servletContext;
+		String appconfigStr = context.getInitParameter("sopo.config");
 		resourceHandle = new AssetHandle();
 
 		Log.info("get config parameter:" + appconfigStr);
@@ -122,11 +121,10 @@ public class Engine
 		}
 	}
 
-	public static Engine init(FilterConfig config)
+	public static Engine init(ServletContext context)
 	{
-		ServletContext context = config.getServletContext();
 		Engine engine = new Engine();
-		engine._init(config);
+		engine._init(context);
 		context.setAttribute(KEY_ENGINE, engine);
 
 		return engine;

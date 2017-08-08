@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grids>
+	<grid id="users2">
+		<col name="UserName" bind="uid" querycell="Text" style="width:30%;" />		
+		<col name="Name" bind="name" querycell="Text" style="width:20%;" />
+		<col name="Code" bind="code" querycell="Text" style="width:30%;" />
+		<col name="Register Date" bind="regdate" querycell="Date" style="width:20%;" />
+	</grid>
+</grids>

@@ -3,14 +3,14 @@ package com.kazge.sopoexample.component.grid;
 import java.io.File;
 import java.io.IOException;
 
-import web.sopo.Request;
-import web.sopo.component.Button;
-import web.sopo.component.Hidden;
-import web.sopo.component.Label;
-import web.sopo.component.TagComponent;
-import web.sopo.component.TemplateComponent;
-import web.sopo.component.Updateable;
-import web.sopo.util.FileUtils;
+import com.kazge.sopo.Request;
+import com.kazge.sopo.component.Button;
+import com.kazge.sopo.component.Hidden;
+import com.kazge.sopo.component.Label;
+import com.kazge.sopo.component.TagComponent;
+import com.kazge.sopo.component.TemplateComponent;
+import com.kazge.sopo.component.Updateable;
+import com.kazge.sopo.util.FileUtils;
 
 public class GridPageNavigate extends TemplateComponent implements Updateable
 {

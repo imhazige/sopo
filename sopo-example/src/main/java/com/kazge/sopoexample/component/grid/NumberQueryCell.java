@@ -1,8 +1,9 @@
 package com.kazge.sopoexample.component.grid;
 
-import test.common.query.FilterCondition;
-import web.sopo.MarkupWriter;
-import web.sopo.Request;
+import com.kazge.sopoexample.common.query.FilterCondition;
+
+import com.kazge.sopo.MarkupWriter;
+import com.kazge.sopo.Request;
 
 public class NumberQueryCell extends QueryCell
 {

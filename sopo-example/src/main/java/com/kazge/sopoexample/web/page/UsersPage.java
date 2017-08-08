@@ -2,20 +2,18 @@ package com.kazge.sopoexample.web.page;
 
 import java.util.List;
 
+import com.kazge.sopoexample.common.bean.PropertyDescriptor;
+import com.kazge.sopoexample.common.query.VirtualQueryResult;
 import com.kazge.sopoexample.web.remote.RemoteMock;
 
-import test.common.bean.PropertyDescriptor;
-import test.common.query.VirtualQueryResult;
-import test.data.User;
-import test.service.Command;
-import web.sopo.component.Anchor;
-import web.sopo.component.grid.Cell;
-import web.sopo.component.grid.Column;
-import web.sopo.component.grid.Grid;
-import web.sopo.component.grid.PrepareRowListener;
-import web.sopo.component.grid.Grid.Row;
+import com.kazge.sopo.component.Anchor;
+import com.kazge.sopo.component.grid.Cell;
+import com.kazge.sopo.component.grid.Column;
+import com.kazge.sopo.component.grid.Grid;
+import com.kazge.sopo.component.grid.PrepareRowListener;
+import com.kazge.sopo.component.grid.Grid.Row;
 
-public class Users extends AbstractPage
+public class UsersPage extends AbstractPage
 {
 	private Grid grid;
 
@@ -39,7 +37,7 @@ public class Users extends AbstractPage
 		}
 		grid.addPrepareRowListener(new RowListener());
 
-		List<User> uzers = (List<User>)((VirtualQueryResult)service.request(Command.GetUsers,null)).getResults();
+		List<UserPage> uzers = (List<UserPage>)((VirtualQueryResult)service.request(Command.GetUsers,null)).getResults();
 		grid.binding(uzers);
 	}
 
@@ -58,7 +56,7 @@ public class Users extends AbstractPage
 			Anchor anchor = new Anchor();
 			String text = ((UserColumn) grid.getColumn(0)).descriptor.display(data);
 			anchor.setText(text);
-			anchor.setHref(String.format("User.aspx?uid=%s", ((User)data).getUid()));
+			anchor.setHref(String.format("User.aspx?uid=%s", ((UserPage)data).getUid()));
 			cell.addComponent(anchor);
 		}
 	}

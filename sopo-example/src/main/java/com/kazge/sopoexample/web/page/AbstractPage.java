@@ -3,8 +3,8 @@ package com.kazge.sopoexample.web.page;
 import java.io.File;
 import java.io.IOException;
 
-import web.sopo.page.Page;
-import web.sopo.util.FileUtils;
+import com.kazge.sopo.page.Page;
+import com.kazge.sopo.util.FileUtils;
 
 public abstract class AbstractPage extends Page
 {

@@ -4,18 +4,18 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 
+import com.kazge.sopoexample.common.StringUtils;
+import com.kazge.sopoexample.common.bean.DateDescriptor;
+import com.kazge.sopoexample.common.query.FilterCondition;
+import com.kazge.sopoexample.common.query.FilterRelation;
+import com.kazge.sopoexample.common.query.FilterType;
 import com.kazge.sopoexample.component.Calendar;
 
-import test.common.StringUtils;
-import test.common.bean.DateDescriptor;
-import test.common.query.FilterCondition;
-import test.common.query.FilterRelation;
-import test.common.query.FilterType;
-import web.sopo.MarkupWriter;
-import web.sopo.Request;
-import web.sopo.component.TemplateComponent;
-import web.sopo.util.FileUtils;
-import web.sopo.util.Log;
+import com.kazge.sopo.MarkupWriter;
+import com.kazge.sopo.Request;
+import com.kazge.sopo.component.TemplateComponent;
+import com.kazge.sopo.util.FileUtils;
+import com.kazge.sopo.util.Log;
 
 public class DateQueryCell extends QueryCell
 {

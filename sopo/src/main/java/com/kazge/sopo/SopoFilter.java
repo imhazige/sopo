@@ -43,7 +43,7 @@ public class SopoFilter implements Filter
 		context = filterConfig.getServletContext();
 		
 		//config
-		engine = Engine.init(filterConfig);
+		engine = Engine.init(context);
 	}
 
 	public void destroy()

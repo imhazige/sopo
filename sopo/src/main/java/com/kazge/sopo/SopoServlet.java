@@ -45,10 +45,9 @@ public class SopoServlet extends HttpServlet
 	@Override
 	public void init(ServletConfig config) throws ServletException
 	{
-		super.init(config);		
-		//config
-		engine = Engine.init(config);
+		super.init(config);	
 		context = config.getServletContext();
+		engine = Engine.init(context);
 	}
 	
 	@Override
