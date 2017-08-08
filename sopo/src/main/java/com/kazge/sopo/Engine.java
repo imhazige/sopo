@@ -82,7 +82,7 @@ public class Engine
 	private void _init(ServletContext servletContext)
 	{
 		context = servletContext;
-		String appconfigStr = context.getInitParameter("sopo.config");
+		String appconfigStr = context.getInitParameter("com.kazge.sopo.Config");
 		resourceHandle = new AssetHandle();
 
 		Log.info("get config parameter:" + appconfigStr);

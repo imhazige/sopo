@@ -8,7 +8,9 @@ import com.kazge.sopoexample.common.query.PagingDataSource;
 import com.kazge.sopoexample.common.query.VirtualQueryResult;
 import com.kazge.sopoexample.component.grid.Column2;
 import com.kazge.sopoexample.component.grid.Grid2;
+import com.kazge.sopoexample.data.User;
 import com.kazge.sopoexample.web.AppConfig;
+import com.kazge.sopoexample.web.remote.Command;
 import com.kazge.sopoexample.web.remote.RemoteMock;
 
 import com.kazge.sopo.Engine;
@@ -62,7 +64,7 @@ public class Users2Page extends AbstractPage
 			String text = ((Column2) grid.getColumn(0)).getDescriptor().display(data);
 			anchor.setText(text);
 			anchor.setTarget("_blank");
-			anchor.setHref(String.format("User.aspx?uid=%s", ((UserPage)data).getUid()));
+			anchor.setHref(String.format("User.aspx?uid=%s", ((User)data).getUid()));
 			cell.addComponent(anchor);
 		}
 	}

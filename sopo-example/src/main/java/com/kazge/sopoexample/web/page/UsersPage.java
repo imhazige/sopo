@@ -2,8 +2,11 @@ package com.kazge.sopoexample.web.page;
 
 import java.util.List;
 
+import com.kazge.sopoexample.common.Log;
 import com.kazge.sopoexample.common.bean.PropertyDescriptor;
 import com.kazge.sopoexample.common.query.VirtualQueryResult;
+import com.kazge.sopoexample.data.User;
+import com.kazge.sopoexample.web.remote.Command;
 import com.kazge.sopoexample.web.remote.RemoteMock;
 
 import com.kazge.sopo.component.Anchor;
@@ -23,7 +26,9 @@ public class UsersPage extends AbstractPage
 		RemoteMock service = RemoteMock.instance();
 		grid = (Grid) getRoot().findComponent("grdUsers");
 		boolean postback = getRequest().isPost();
+		Log.debug("this is %s post back.",postback?"a":"not a");
 
+		@SuppressWarnings("unchecked")
 		List<PropertyDescriptor> cols = (List<PropertyDescriptor>)service.request(Command.GetUserDescriptors,null);
 		for (int i = 0; i < cols.size(); i++)
 		{
@@ -37,6 +42,7 @@ public class UsersPage extends AbstractPage
 		}
 		grid.addPrepareRowListener(new RowListener());
 
+		@SuppressWarnings("unchecked")
 		List<UserPage> uzers = (List<UserPage>)((VirtualQueryResult)service.request(Command.GetUsers,null)).getResults();
 		grid.binding(uzers);
 	}
@@ -56,7 +62,7 @@ public class UsersPage extends AbstractPage
 			Anchor anchor = new Anchor();
 			String text = ((UserColumn) grid.getColumn(0)).descriptor.display(data);
 			anchor.setText(text);
-			anchor.setHref(String.format("User.aspx?uid=%s", ((UserPage)data).getUid()));
+			anchor.setHref(String.format("User.aspx?uid=%s", ((User)data).getUid()));
 			cell.addComponent(anchor);
 		}
 	}

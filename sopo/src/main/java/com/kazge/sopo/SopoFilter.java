@@ -14,7 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.kazge.sopo.util.Log;
 
-@SuppressWarnings("serial")
 public class SopoFilter implements Filter
 {
 	private Engine engine;

@@ -28,7 +28,7 @@ public class AppConfig extends com.kazge.sopo.AppConfig
 			@Override
 			public String getPagePackageName()
 			{
-				return "test.ui.web.page";
+				return "com.kazge.sopoexample.web.page";
 			}
 		};
 	}
@@ -37,7 +37,7 @@ public class AppConfig extends com.kazge.sopo.AppConfig
 	public Map<String, String> registerLibrary()
 	{
 		Map<String, String> tags = new HashMap<String, String>();
-		tags.put("t", "test.ui.component");
+		tags.put("t", "com.kazge.sopoexample.component");
 
 		return tags;
 	}

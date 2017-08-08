@@ -25,7 +25,6 @@ public class PageManager
 		return (PageManager)engine.getAppconfig().get(KEY);
 	}
 
-	@SuppressWarnings("unchecked")
 	public Page getPage(Request req,Response resp)
 	{
 		try

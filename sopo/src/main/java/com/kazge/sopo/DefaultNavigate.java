@@ -20,8 +20,7 @@ public class DefaultNavigate implements Navigate
 			pageStr = pageStr.substring(0,index + 1) + StringUtils.upperFirst(pageStr.substring(index + 1));
 		}
 		pageStr = pageStr.replaceAll("/", ".");
-		pageStr = StringUtils.upperFirst(pageStr);
-		pageStr = getPagePackageName() + pageStr;		
+		pageStr = mapping2ClassName(pageStr);		
 
 		try
 		{
@@ -34,6 +33,11 @@ public class DefaultNavigate implements Navigate
 			throw new RuntimeException(e);
 		}
 	}
+	
+	public String mapping2ClassName(String pageName){
+		pageName = StringUtils.upperFirst(pageName) + "Page";
+		return getPagePackageName() + pageName;
+	} 
 	
 	public String getPagePackageName()
 	{

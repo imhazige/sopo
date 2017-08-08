@@ -5,13 +5,6 @@ import com.kazge.sopo.Engine;
 
 public class RemoteMock
 {
-	
-	private OperatorBean bean;
-	private RemoteMock()
-	{
-		bean = new OperatorBean();
-	}
-	
 	public static RemoteMock instance()
 	{
 		AppConfig config =  Engine.instance().getAppconfig();
@@ -26,6 +19,28 @@ public class RemoteMock
 	}
 	
 	public Object request(Command command,Object data){
-		return bean.doAction(command,data);
+		switch (command) {
+		case GetUser:
+		{
+			
+			break;
+		}
+		case GetUserDescriptors:
+		{
+			break;
+		}
+		case GetUsers:
+		{
+			break;
+		}
+		case UpdateUser:
+		{
+			break;
+		}
+
+		default:
+			break;
+		}
+		return null;
 	}
 }
