@@ -17,12 +17,12 @@ public class PageTemplateTest extends TestCase
 
 		};
 		
-		new PageTemplate(page).parse(FileUtils.readPackageResource("web/sopo/template/Index.html"));
+		new PageTemplate(page).parse(FileUtils.readPackageResource("com/kazge/sopo/template/Index.html"));
 	}
 	
 	public void testPattern()
 	{
-		String input = FileUtils.readPackageResource("web/sopo/template/Index.html");
+		String input = FileUtils.readPackageResource("com/kazge/sopo/template/Index.html");
 		input = input.replaceAll("\\n", "");
 		Pattern pattern = Pattern.compile("<head>.*</head>");
 		Matcher matcher = pattern.matcher(input);

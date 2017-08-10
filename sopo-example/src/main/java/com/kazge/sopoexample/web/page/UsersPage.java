@@ -4,7 +4,6 @@ import java.util.List;
 
 import com.kazge.sopoexample.common.Log;
 import com.kazge.sopoexample.common.bean.PropertyDescriptor;
-import com.kazge.sopoexample.common.query.VirtualQueryResult;
 import com.kazge.sopoexample.data.User;
 import com.kazge.sopoexample.web.remote.Command;
 import com.kazge.sopoexample.web.remote.RemoteMock;
@@ -43,7 +42,7 @@ public class UsersPage extends AbstractPage
 		grid.addPrepareRowListener(new RowListener());
 
 		@SuppressWarnings("unchecked")
-		List<UserPage> uzers = (List<UserPage>)((VirtualQueryResult)service.request(Command.GetUsers,null)).getResults();
+		List<UserPage> uzers = (List<UserPage>)service.request(Command.GetUsers,null);
 		grid.binding(uzers);
 	}
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="email"><![CDATA[^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$]]></entry>
+	<entry key="email.message">
+	<![CDATA[Provided email is not valid]]></entry>
+	<entry key="date"><![CDATA[^((\d*(0?[048]|[2468][048]|[13579][26])00|\d*(0?[48]|[2468][048]|[13579][26]))-0?2-29)$|^[1-9]\d*-((0?[13578]|10|12)-(3[01]|[12]\d|0?[1-9])|(0?[469]|11)-(30|[12]\d|0?[1-9])|(0?2)-(2[0-8]|1\d|0?[1-9]))$]]>
+	</entry>
+	<entry key="date.message"><![CDATA[Provided birthday is not valid]]></entry>
+</properties>
+

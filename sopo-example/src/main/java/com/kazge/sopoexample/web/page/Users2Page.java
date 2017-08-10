@@ -42,7 +42,9 @@ public class Users2Page extends AbstractPage
 		grid.binding(new PagingDataSource(){
 			public VirtualQueryResult query(Filter filter)
 			{
-				return (VirtualQueryResult)RemoteMock.instance().request(Command.GetUsers, filter);
+				VirtualQueryResult vr = new VirtualQueryResult();
+				vr.setResults(RemoteMock.instance().request(Command.GetUsers, filter));
+				return vr;
 			}			
 		});
 		

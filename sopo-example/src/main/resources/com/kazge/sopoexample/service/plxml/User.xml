@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="gb2312"?>
+<ps>	
+	<p name="uid" label="UserName" visible="true" uiType="Text"
+		required="true" regexp="" editable="false" queryable="true" sortable="true" defaultValue=""
+		requiredTooltip="登录名不能为空" regexpTooltip="" />
+	<p name="name" label="Name" visible="true" uiType="Text"
+		required="false" regexp="" editable="true" queryable="true" sortable="true" defaultValue=""
+		requiredTooltip="" regexpTooltip="" />
+	<p name="pwd" label="Password" visible="false" uiType="Password"
+		required="true" regexp="" editable="true" queryable="false" sortable="false" defaultValue=""
+		requiredTooltip="password is required." regexpTooltip="" />
+	<p name="code" label="Code" visible="true" uiType="Text"
+		required="true" regexp="" editable="true" queryable="true" sortable="true" defaultValue=""
+		requiredTooltip="code is required." regexpTooltip="" />
+	<p class="date" dateformat="yyyy-MM-dd" name="regdate" label="Register Date" visible="true" uiType="Date"
+		required="false" regexp="" editable="true" queryable="true" sortable="true" defaultValue=""
+		requiredTooltip="" regexpTooltip="" />				
+</ps>

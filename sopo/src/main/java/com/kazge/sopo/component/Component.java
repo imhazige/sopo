@@ -182,7 +182,11 @@ public abstract class Component
 
 	public Page getPage()
 	{
-		return Request.getCurrentInstance().getPage();
+		Request request = Request.getCurrentInstance();
+		if (null == request){
+			return null;
+		}
+		return request.getPage();
 	}
 
 	public void clear()
