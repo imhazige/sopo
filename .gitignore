@@ -7,3 +7,5 @@ sopo-example/src/WebRoot/WEB-INF/lib
 sopo-example/src/WebRoot/WEB-INF/classes
 sopo-example/src/main/webapp/WEB-INF/lib
 sopo-example/src/main/webapp/WEB-INF/classes
+sopo/sopo.iml
+sopo-example/sopo-example.iml
